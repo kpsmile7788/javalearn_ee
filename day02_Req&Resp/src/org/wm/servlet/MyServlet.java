@@ -10,6 +10,9 @@ import java.io.IOException;
  * @program: javaee
  * @description:
  *              设置中文的三种方式
+ *
+ *              第三种：
+ *                  修改Tomcat中的配置文件(Server.xml)
  * @author: Mr.Wang
  * @create: 2019-07-11 14:59
  **/
