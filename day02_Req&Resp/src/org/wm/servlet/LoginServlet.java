@@ -9,6 +9,12 @@ import java.io.IOException;
 /**
  * @program: javaee
  * @description:
+ *                  该servlet作为服务器端账号密码校验
+ *
+ *                  （双重校验：
+ *                      1.前端HTML页面用JS进行校验
+ *                      2.后端采用servlet进行校验
+ *                          ）
  * @author: Mr.Wang
  * @create: 2019-07-11 15:23
  **/
