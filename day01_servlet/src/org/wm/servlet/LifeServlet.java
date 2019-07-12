@@ -52,20 +52,45 @@ import java.io.IOException;
  **/
 public class LifeServlet extends HttpServlet {
 
+    /**
+     * 创建对象
+     * 一个Servlet不管被访问多少次，只创建一次对象
+     * Servlet是单实例的
+     */
     public LifeServlet(){
         System.out.println("---------Constructor of LifeServlet------------");
     }
 
+    /**
+     * 初始化操作
+     * 创建完对象后自动执行，只执行一次
+     * @param config
+     * @throws ServletException
+     */
     @Override
     public void init(ServletConfig config) throws ServletException {
         System.out.println("---------------MSG of INIT-----------------");
     }
 
+    /**
+     * 对用户的请求进行处理（提供服务）
+     * 每次请求都执行
+     * 对于每次请求，Tomcat会开启一个新的线程，并调用Servlet的service()方法
+     * Servlet是单实例多线程的
+     * @param req
+     * @param res
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         System.out.println("------------MGS of Service---------------");
     }
 
+    /**
+     * 扫尾操作
+     * 只执行一次
+     */
     @Override
     public void destroy() {
         System.out.println("---------------MSG of Destory---------------");
