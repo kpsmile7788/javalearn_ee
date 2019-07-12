@@ -14,7 +14,7 @@ import java.io.IOException;
  *              2. 实例化类
  *              3. 初始化类
  *              4. 服务
- *              5. 摧毁
+ *              5. 销毁
  * @author: Mr.Wang
  * @create: 2019-07-11 09:46
  **/
