@@ -39,7 +39,7 @@
 </head>
 <body>
 <h3>用户登录：</h3>
-<form method="get" action="/2/LoginServlet" onsubmit="return checkForm()">
+<form method="get" action="/2/DispatcherAndRedirect" onsubmit="return checkForm()">
     用户名：<input type="text" name="username" id="username" onblur="checkUsername()">
     <span id="nameError">
         <%

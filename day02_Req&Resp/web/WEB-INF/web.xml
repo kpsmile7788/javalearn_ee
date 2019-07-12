@@ -12,6 +12,10 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>org.wm.servlet.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DispatcherAndRedirect</servlet-name>
+        <servlet-class>org.wm.servlet.DispatcherAndRedirect</servlet-class>
+    </servlet>
     
     <servlet-mapping>
         <servlet-name>MyServlet</servlet-name>
@@ -20,6 +24,10 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DispatcherAndRedirect</servlet-name>
+        <url-pattern>/DispatcherAndRedirect</url-pattern>
     </servlet-mapping>
     
 </web-app>
