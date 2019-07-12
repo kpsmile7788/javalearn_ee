@@ -3,7 +3,7 @@ java.servlet.Servlet(接口)
 -->java.servlet.http.HttpServlet(抽象)
 -->自己的编写的servlet类
 
-``` flow
+``` flow js
 st=>start: 开始
 op=>operation: My Operation
 cond=>condition: Yes or No?
