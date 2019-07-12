@@ -1,19 +1,19 @@
 java.servlet.Servlet(接口)-->java.servlet.GenericServlet(抽象类)-->java.servlet.http.HttpServlet(抽象)-->自己的编写的servlet类
 
 
-##Servlet接口：所有servlet必须直接或间接实现的类。
+## Servlet接口：所有servlet必须直接或间接实现的类。
 init( ServletConfig config )
 service(ServletRequest req, ServletResponse res)
 destroy()
 getServletInfo():获得Servlet信息。
 getServletConfig()：获得Servlet配置相关信息。
-##GenericServlet抽象类：implements Servlet, ServletConfig
+## GenericServlet抽象类：implements Servlet, ServletConfig
 定义了一个通用的，不依赖于具体协议的Servlet，给出了除service()方法外的其余四个方法的实现。
 public void init(ServletConfig config) thows SerletExcepiton
 protected  void init() thows SerletExcepiton
 第一个是servlet接口的init(),调用第二个init(), 重写第二个init()即可
 
-##HttpServlet类
+## HttpServlet类
 public void service(ServletRequest req, ServletResponse res)
 protected void service(HttpServletRequest req, HttpServletResponse res)
 protected void doGet(request,response)
