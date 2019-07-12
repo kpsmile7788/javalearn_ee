@@ -13,6 +13,9 @@ import java.io.IOException;
  *
  *              第三种：
  *                  修改Tomcat中的配置文件(Server.xml)
+ *                  <Connector port="8080" protocol="HTTP/1.1"
+ *                                  connectionTimeout="20000"
+ *                                  redirectPort="8443" URIEncoding="utf-8" />
  * @author: Mr.Wang
  * @create: 2019-07-11 14:59
  **/
